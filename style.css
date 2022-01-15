@@ -1,0 +1,183 @@
+/* ************************************************************************************** */
+/*                                                                                        */																					  
+/* Project:                                             / $$      /$$ /$$$$$$$$ /$$$$$$   */
+/*                  			                        | $$  /$ | $$| $$_____//$$__  $$  */
+/* index.html                                    	    | $$ /$$$| $$| $$     |__/  \ $$  */
+/*                                                  	| $$/$$ $$ $$| $$$$$     /$$$$$/  */
+/* By: vcastell <valeriocastellipro@gmail.com>	        | $$$$_  $$$$| $$__/    |___  $$  */
+/*                                              		| $$$/ \  $$$| $$      /$$  \ $$  */
+/* Created: 2022/01/12 11:02:01 vcastell     	        | $$/   \  $$| $$     |  $$$$$$/  */
+/* Updated: 2022/01/12 23:41:01 vcastell                |__/     \__/|__/      \______/   */
+/*                                                                    				      */
+/******************************************************************************************/
+
+/* IMPORTATIONS */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+
+html {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 62.5%;
+	
+	--color-white: #ffffff;
+	--color-black: #000000;
+	--color-lightgray: #f8f9fa;
+	--color-gray: #999999;
+	--color-darkgray: #4a4a4b;
+	--color-green: #a2c0be;
+	--color-darkgreen: #567876;
+	--color-orange: #ff9900;
+}
+
+body{
+	font-size: 1.6rem;
+	margin: 0;
+}
+
+p{
+	color: var(--color-gray);
+}
+
+.orange{
+	color: var(--color-orange);
+}
+
+/* ### HEADER ### */
+
+/* NAV BAR */
+
+body header{
+	padding: 40px 40px 0px 40px;
+	background-color: var(--color-lightgray);
+}
+
+body header a{
+	text-decoration: none;
+	color: var(--color-black);
+	font-size: 3rem;
+	font-weight: 700;
+}
+
+body header nav{
+	display: inline-block;
+}
+
+body header .nav-bar{
+	display: flex;
+	justify-content: space-between;
+	width: 70%;
+	margin: auto;
+}
+
+body header nav ul{
+	display: flex;
+	flex-direction: row;
+	list-style: none;
+	gap: 20px;
+}
+
+body header nav ul li a{
+	display: block;
+	text-decoration: none;
+	font-weight: 600;
+	font-size: 2rem;
+	color: var(--color-gray);
+}
+
+body header nav ul li a:hover{
+	color: var(--color-darkgray);
+}
+
+/* PRESENTATION HEADER */
+
+body header .presentation{
+	display: flex;
+	width: 70%;
+    margin: auto;
+}
+
+body header .presentation .desc{
+	width: 60%;
+	margin: auto;
+	text-align: center;
+	vertical-align: middle;
+}
+
+body header .presentation .desc h1{
+	font-weight: 400;
+	font-size: 52px;
+}
+
+body header .presentation img{
+	width: 30%;
+}
+
+/* ### MAIN ### */
+
+body main .desc{
+	text-align: center;
+	padding: 40px;
+	width: 30%;
+	margin: auto;
+}
+
+body main .desc h2{
+	font-weight: 700;
+	font-size: 3.6rem;
+}
+
+
+body main .container .small-container{
+	display: flex;
+	text-align: end;
+	width: 70%;
+	margin: auto;
+	padding: 40px;
+	justify-content:space-evenly;
+}
+
+body main .container .small-container:nth-child(even){
+	text-align: initial;
+}
+
+body main .container .small-container img{
+	width: 35%;
+	box-shadow: 12px 12px 2px 1px var(--color-green);
+}
+
+body main .container .small-container .details{
+	padding: 50px;
+	width: 30%;
+}
+
+body main .container .small-container .details h3{
+	font-size: 3.6rem;
+	font-weight: 600;
+}
+
+body main .container .small-container .details a{
+	display: inline-block;
+	text-decoration: none;
+	text-align: center;
+	font-weight: 600;
+	border-radius: 25px;
+	padding: 20px 40px 20px 40px;
+	color: var(--color-white);
+	background-color: var(--color-green);
+}
+
+body main .container .small-container .details a:hover{
+	transition: 1s ease;
+	background-color: var(--color-black);
+}
+
+/* ### FOOTER ###*/
+
+footer{
+	margin-top: 40px;
+	padding: 50px;
+	font-weight: 700;
+
+	text-align: center;
+	color: var(--color-white);
+	background-color: var(--color-darkgray);
+}
